@@ -5,3 +5,18 @@ dist
 
 # Ignore the output video from Git but not videos you import into src/.
 out
+
+# Build output
+build/
+
+# Claude internal config
+.claude/
+
+# Generated files
+eslint_output.json
+
+# Large media files in public (too large for git)
+public/storytelling/
+public/*.mp4
+public/*.wav
+public/*.mp3
