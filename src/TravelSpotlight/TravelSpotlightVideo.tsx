@@ -56,7 +56,7 @@ export const TravelSpotlightVideo: React.FC = () => {
       <Audio src={staticFile("travel_bgm.wav")} volume={0.35} loop />
 
       {/* Voiceover (if generated) */}
-      {/* <Audio src={staticFile("travel_voiceover.mp3")} volume={1.0} /> */}
+      { <Audio src={staticFile("travel_voiceover.mp3")} volume={1.0} /> }
 
       {/* Scene transitions */}
       <TransitionSeries>
