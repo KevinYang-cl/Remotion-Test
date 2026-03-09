@@ -23,8 +23,8 @@ const { fontFamily } = loadFont("normal", {
 export const InariScene: React.FC = () => {
   const frame = useCurrentFrame();
 
-  // Slow zoom for cinematic effect
-  const scale = interpolate(frame, [0, 510], [1.0, 1.12], {
+  // Slow zoom for cinematic effect (333 frames = 11.1s matches video length)
+  const scale = interpolate(frame, [0, 333], [1.0, 1.12], {
     extrapolateRight: "clamp",
   });
 

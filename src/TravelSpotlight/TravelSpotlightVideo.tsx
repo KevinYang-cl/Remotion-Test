@@ -30,21 +30,21 @@ const { fontFamily } = loadFont("normal", {
 /*
  * Travel Spotlight - 大阪京都旅遊推廣影片
  * Format: Instagram Reels (1080×1920, vertical)
- * Duration: 180 seconds (3 min) @ 30fps = 5400 frames
+ * Duration: ~133 seconds (2:13) @ 30fps = 3993 frames
  *
  * Scene breakdown (raw durations):
  * 1. Hook Scene        - 330f  (11.0s)  大阪京都要怎麼玩呢？
- * 2. Mario Scene       - 750f  (25.0s)  超級任天堂世界
+ * 2. Mario Scene       - 600f  (20.0s)  超級任天堂世界
  * 3. Pokemon Scene     - 510f  (17.0s)  寶可夢表演秀
- * 4. Train Scene       - 660f  (22.0s)  嵐山觀光小火車
- * 5. Inari Scene       - 510f  (17.0s)  伏見稻荷大社
+ * 4. Train Scene       - 450f  (15.0s)  嵐山觀光小火車
+ * 5. Inari Scene       - 333f  (11.1s)  伏見稻荷大社
  * 6. Kamogawa Scene    - 480f  (16.0s)  鴨川河畔散步
- * 7. Food Scene        - 840f  (28.0s)  A5和牛美食
- * 8. Klook Scene       - 780f  (26.0s)  Klook推廣
- * 9. CTA Scene         - 660f  (22.0s)  結尾CTA
+ * 7. Food Scene        - 630f  (21.0s)  A5和牛美食
+ * 8. Klook Scene       - 390f  (13.0s)  Klook推廣
+ * 9. CTA Scene         - 390f  (13.0s)  結尾CTA
  *
  * 8 transitions × 15 frames = 120 frames overlap
- * Total: 5520 - 120 = 5400 frames ✓
+ * Total: 4113 - 120 = 3993 frames
  */
 
 const TRANSITION_FRAMES = 15;
@@ -71,7 +71,7 @@ export const TravelSpotlightVideo: React.FC = () => {
         />
 
         {/* Scene 2: Super Nintendo World */}
-        <TransitionSeries.Sequence durationInFrames={750}>
+        <TransitionSeries.Sequence durationInFrames={600}>
           <MarioScene />
         </TransitionSeries.Sequence>
 
@@ -94,7 +94,7 @@ export const TravelSpotlightVideo: React.FC = () => {
         />
 
         {/* Scene 4: Arashiyama Train */}
-        <TransitionSeries.Sequence durationInFrames={660}>
+        <TransitionSeries.Sequence durationInFrames={450}>
           <TrainScene />
         </TransitionSeries.Sequence>
 
@@ -104,7 +104,7 @@ export const TravelSpotlightVideo: React.FC = () => {
         />
 
         {/* Scene 5: Fushimi Inari */}
-        <TransitionSeries.Sequence durationInFrames={510}>
+        <TransitionSeries.Sequence durationInFrames={333}>
           <InariScene />
         </TransitionSeries.Sequence>
 
@@ -127,7 +127,7 @@ export const TravelSpotlightVideo: React.FC = () => {
         />
 
         {/* Scene 7: A5 Wagyu Food */}
-        <TransitionSeries.Sequence durationInFrames={840}>
+        <TransitionSeries.Sequence durationInFrames={630}>
           <FoodScene />
         </TransitionSeries.Sequence>
 
@@ -137,7 +137,7 @@ export const TravelSpotlightVideo: React.FC = () => {
         />
 
         {/* Scene 8: Klook Promotion */}
-        <TransitionSeries.Sequence durationInFrames={780}>
+        <TransitionSeries.Sequence durationInFrames={390}>
           <KlookScene />
         </TransitionSeries.Sequence>
 
@@ -147,7 +147,7 @@ export const TravelSpotlightVideo: React.FC = () => {
         />
 
         {/* Scene 9: CTA - Call to Action */}
-        <TransitionSeries.Sequence durationInFrames={660}>
+        <TransitionSeries.Sequence durationInFrames={390}>
           <CTAScene />
         </TransitionSeries.Sequence>
       </TransitionSeries>
